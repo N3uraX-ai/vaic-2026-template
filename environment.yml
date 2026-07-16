@@ -32,8 +32,12 @@ dependencies:
     - sentencepiece==0.2.0
     - tokenizers==0.19.1
 
+    # Build tools (phải install trước whisper)
+    - setuptools>=68.0
+    - wheel
+
     # Whisper — speech-to-text bằng PyTorch (dùng được mọi track)
-    - openai-whisper==20240930
+    - openai-whisper
 
     # AI / LLM clients
     - openai==1.50.2

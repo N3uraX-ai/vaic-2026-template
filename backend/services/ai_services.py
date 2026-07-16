@@ -50,7 +50,8 @@ class ImageClassifierService:
 
     def load(self, num_classes: int = 1000):
         import torchvision.models as models
-        self._model = getattr(models, self.model_name)(pretrained=True)
+        weights = models.EfficientNet_V2_S_Weights.IMAGENET1K_V1
+        self._model = models.efficientnet_v2_s(weights=weights)
         self._model = self._model.to(DEVICE)
         self._model.eval()
         print(f"[ImageClassifier] {self.model_name} loaded ✓")
