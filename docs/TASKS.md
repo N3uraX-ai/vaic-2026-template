@@ -27,7 +27,7 @@
 
 ### Hưng (AI All-round)
 
-- [ ] `cd frontend && npm install && npm run dev` → localhost:3000 OK
+- [x] `cd frontend && npm install && npm run dev` → localhost:3000 OK
 - [ ] Tạo **Google Slides** 10 slide blank, đặt tên sections sẵn:
   - Slide 1: Hook · Slide 2: Problem · Slide 3: Solution · Slide 4: Architecture
   - Slide 5: Demo · Slide 6: Business Case · Slide 7: Metrics · Slide 8: Tech Stack
