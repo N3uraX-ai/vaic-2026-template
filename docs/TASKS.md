@@ -39,7 +39,10 @@
 - [ ] `conda activate vaic2026 && uvicorn backend/main:app --reload` → localhost:8000 OK
 - [ ] Login Railway + Vercel, kết nối GitHub account
 - [ ] Install Railway CLI: `npm install -g @railway/cli && railway login`
-- [ ] Install ngrok (emergency backup): https://ngrok.com/download
+- [ ] Install **ngrok** (emergency backup): https://ngrok.com/download
+- [ ] Cài đặt extension **REST Client** (hoặc Thunder Client) trên VS Code / Cursor để test API
+- [ ] Đăng ký sẵn 1 project **Supabase** trống (phòng trường hợp cần lưu Database/Storage)
+- [ ] Cài đặt **OBS Studio** (hoặc Loom) & **CapCut** trên máy của Hưng (chuẩn bị làm demo video)
 - [ ] **[CRITICAL]** Deploy backend lên Railway — có live URL
 - [ ] **[CRITICAL]** Deploy frontend lên Vercel — gọi được backend
 - [ ] Update `frontend/vercel.json` với Railway URL thật

@@ -326,7 +326,35 @@ async predict[Track](input: InputType): Promise<OutputType> {
 
 ---
 
-## 11. Emergency Fallbacks
+## 11. Các Công Cụ Hỗ Trợ Đội Thi (Tăng Tốc 10x)
+
+### API Testing (REST Client)
+- File `backend/api_tests.http` được cấu hình sẵn để test local và production API.
+- Cài extension **REST Client** trên VS Code / Cursor để gửi request trực tiếp từ file này bằng cách bấm nút `Send Request` xuất hiện trên dòng code.
+
+### Database & Storage (Supabase)
+- Dự án sử dụng `supabase-py` ở backend và REST/Client library ở frontend.
+- Cấu hình biến môi trường `SUPABASE_URL` và `SUPABASE_KEY` trong file `.env`.
+- Hạn chế viết ORM phức tạp, tận dụng tính năng tự động tạo bảng và API REST của Supabase để lấy/thêm dữ liệu.
+
+### Ghi hình & Dựng Demo (Nộp bài)
+- **Quay phim màn hình:** Dùng **OBS Studio** (Free) hoặc **Loom** để lưu nhanh và demo luồng chạy của sản phẩm.
+- **Biên tập clip ≤ 5 phút:** Dùng **CapCut** trên máy của Hưng để ghép tiếng, cắt phân đoạn lỗi và xuất video nhanh.
+
+### Vẽ sơ đồ kiến trúc (AI Architecture)
+- Vẽ sơ đồ hệ thống bằng **Excalidraw** hoặc mô tả trực tiếp bằng cú pháp **Mermaid.js** trong file markdown:
+```mermaid
+graph TD
+    User([User]) -->|Request| FE[Next.js Frontend]
+    FE -->|API Call| BE[FastAPI Backend]
+    BE -->|Raw Input| PyTorch[PyTorch Model local]
+    PyTorch -->|Prediction + Confidence| LLM[Groq LLM Layer]
+    LLM -->|Synthesized Output| FE
+```
+
+---
+
+## 12. Emergency Fallbacks
 
 | Tình huống | Giải pháp |
 |------------|-----------|
