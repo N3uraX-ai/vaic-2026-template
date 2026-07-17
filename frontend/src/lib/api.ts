@@ -25,12 +25,13 @@ class ApiClient {
       ...options,
     });
 
+    const text = await res.text();
     if (!res.ok) {
-      const error = await res.json().catch(() => ({ detail: res.statusText }));
+      const error = text ? JSON.parse(text) : { detail: res.statusText };
       throw new Error(error.detail || "API Error");
     }
 
-    return res.json();
+    return text ? (JSON.parse(text) as T) : ({} as T);
   }
 
   // ── Health ────────────────────────────────────────────────────────────────
