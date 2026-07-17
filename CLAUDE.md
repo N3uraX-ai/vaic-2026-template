@@ -13,8 +13,9 @@
 - 🥇 **Top 1** ($10,000) — cần ghi điểm toàn diện cả 6 tiêu chí
 - 🔥 **Best PyTorch Award** ($5,000 từ Meta) — PyTorch phải là **core** của giải pháp, không phải decoration
 
-**Track:** Chưa chọn — được công bố lúc 11:00 ngày 17/07.  
-Sau khi chọn, ghi vào `docs/ai_collab_log.md` và `README.md`.
+**Track:** Nông nghiệp — BioListen VN (Biodiversity monitoring through Ecological acoustics)
+**Deep Analysis & Technical Plan:** [docs/BIOLISTEN_PLAN.md](file:///c:/Users/Le%20Nguyen%20Gia%20Hung/everything/Code/Organization/NeuraX.ai/vaic-2026/docs/BIOLISTEN_PLAN.md)
+**Active Task Board:** [docs/TASKS.md](file:///c:/Users/Le%20Nguyen%20Gia%20Hung/everything/Code/Organization/NeuraX.ai/vaic-2026/docs/TASKS.md)
 
 ---
 
